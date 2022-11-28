@@ -1,0 +1,15 @@
+﻿  availableTasks.c
+  deleteTask.c
+C:\Users\Ryan\source\repos\Group4-Programming-Group-Project\Programming-Principles-Final-Group-Assignment1\ProgrammingFinalGroupAssignment\Item1\deleteTask.c(45,36): warning C4047: '=': 'int' differs in levels of indirection from 'char *'
+C:\Users\Ryan\source\repos\Group4-Programming-Group-Project\Programming-Principles-Final-Group-Assignment1\ProgrammingFinalGroupAssignment\Item1\deleteTask.c(46,38): warning C4047: '=': 'int' differs in levels of indirection from 'char *'
+  fileRead.c
+  fileWrite.c
+  input.c
+  menuPrint.c
+  newTask.c
+C:\Users\Ryan\source\repos\Group4-Programming-Group-Project\Programming-Principles-Final-Group-Assignment1\ProgrammingFinalGroupAssignment\Item1\newTask.c(59,49): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  printAllTasks.c
+  Source.c
+  Generating Code...
+  LINK : C:\Users\Ryan\Source\Repos\Group4-Programming-Group-Project\Programming-Principles-Final-Group-Assignment1\ProgrammingFinalGroupAssignment\x64\Debug\Item1.exe not found or not built by the last incremental link; performing full link
+  Item1.vcxproj -> C:\Users\Ryan\Source\Repos\Group4-Programming-Group-Project\Programming-Principles-Final-Group-Assignment1\ProgrammingFinalGroupAssignment\x64\Debug\Item1.exe

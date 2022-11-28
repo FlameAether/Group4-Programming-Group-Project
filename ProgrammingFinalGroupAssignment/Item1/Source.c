@@ -76,4 +76,4 @@ int main(void)
 	printf("\nSaved to file\n");
 
 	return 0;
-} 
+} // testing commit function

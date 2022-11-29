@@ -12,6 +12,7 @@ void menuPrint()
 	// displays menu
 	printf("\nMenu:\na) Add a task\nb) Show List Of Tasks\n");
 	printf("c) View Available Task Numbers\nd) Delete A Task\n");
+	printf("e) Display a single Task");
 	printf("z) Quit\n");
 	printf("\n---------------------------");
 	printf("\nAction: ");

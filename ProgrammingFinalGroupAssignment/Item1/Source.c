@@ -13,6 +13,8 @@
 #include "newTask.h"
 #include "menuPrint.h"
 
+#include "updateTask.h"
+#include "printSingleTask.h"
 #include "printAllTasks.h"
 #include "deleteTask.h"
 #include "availableTasks.h"
@@ -71,6 +73,12 @@ int main(void)
 			updateTask();
 			menuPrint();
 			break;
+		}
+		case 'f':
+		{
+			printSingleTask();
+			menuPrint();
+
 		}
 		}
 

@@ -147,6 +147,7 @@
     <ClInclude Include="menuPrint.h" />
     <ClInclude Include="newTask.h" />
     <ClInclude Include="printAllTasks.h" />
+    <ClInclude Include="printSingleTask.h" />
     <ClInclude Include="taskStruct.h" />
     <ClInclude Include="updateTask.h" />
   </ItemGroup>
@@ -159,6 +160,7 @@
     <ClCompile Include="menuPrint.c" />
     <ClCompile Include="newTask.c" />
     <ClCompile Include="printAllTasks.c" />
+    <ClCompile Include="printSingleTask.c" />
     <ClCompile Include="Source.c" />
     <ClCompile Include="updateTask.c" />
   </ItemGroup>

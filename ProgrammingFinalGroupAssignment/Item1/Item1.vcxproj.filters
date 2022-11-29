@@ -45,6 +45,9 @@
     <ClInclude Include="updateTask.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="printSingleTask.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.c">
@@ -75,6 +78,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="updateTask.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="printSingleTask.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

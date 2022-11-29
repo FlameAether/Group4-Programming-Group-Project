@@ -148,6 +148,7 @@
     <ClInclude Include="newTask.h" />
     <ClInclude Include="printAllTasks.h" />
     <ClInclude Include="taskStruct.h" />
+    <ClInclude Include="updateTask.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="availableTasks.c" />
@@ -159,6 +160,7 @@
     <ClCompile Include="newTask.c" />
     <ClCompile Include="printAllTasks.c" />
     <ClCompile Include="Source.c" />
+    <ClCompile Include="updateTask.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

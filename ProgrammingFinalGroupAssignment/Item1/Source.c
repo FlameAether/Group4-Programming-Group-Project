@@ -66,7 +66,12 @@ int main(void)
 			menuPrint();
 			break;
 		}
-
+		case 'e':
+		{
+			updateTask();
+			menuPrint();
+			break;
+		}
 		}
 
 		userInputFunction(&userInput); // calls user input function

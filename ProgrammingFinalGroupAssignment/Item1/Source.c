@@ -16,8 +16,10 @@
 #include "updateTask.h"
 #include "printSingleTask.h"
 #include "printAllTasks.h"
+#include "printRangeTask.h"
 #include "deleteTask.h"
 #include "availableTasks.h"
+#include "searchTask.h"
 
 // file input/output files
 #include "fileWrite.h"
@@ -70,7 +72,7 @@ int main(void)
 		}
 		case 'e':
 		{
-			updateTask();
+			//updateTask();
 			menuPrint();
 			break;
 		}
@@ -79,6 +81,14 @@ int main(void)
 			printSingleTask();
 			menuPrint();
 
+		}
+		case 'g': {
+			printRangeTask();
+			menuPrint();
+		}
+		case 'h': {
+			searchTask();
+			menuPrint();
 		}
 		}
 
@@ -89,5 +99,4 @@ int main(void)
 	printf("\nSaved to file\n");
 
 	return 0;
-} // testing commit function
-//testing for ryan -- Matteo 
+}

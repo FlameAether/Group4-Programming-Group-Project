@@ -14,15 +14,15 @@
 void printSingleTask() {
 
 	printf("Enter the task number of a task\n");
-	int input;
-	scanf("%d", &input);
+	int taskNum;
+	scanf("%d", &taskNum);
 
 	//printf("Error, reinput number!\n");
 
 
 	for (int i = 0; i < ARRAYSIZE; i++) {
 
-		if ((taskArray[i].id == input) && (taskArray[i].assigned == true)) {
+		if ((taskArray[i].id == taskNum) && (taskArray[i].assigned == true)) {
 
 			printf("\nTask Number: %d\nMonth: %d Day: %d\nDescription: %s\n", taskArray[i].id, taskArray[i].day, taskArray[i].month, taskArray[i].element);
 			break;

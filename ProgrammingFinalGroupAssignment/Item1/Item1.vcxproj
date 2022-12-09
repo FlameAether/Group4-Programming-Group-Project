@@ -112,7 +112,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>Level4</WarningLevel>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
@@ -147,7 +147,9 @@
     <ClInclude Include="menuPrint.h" />
     <ClInclude Include="newTask.h" />
     <ClInclude Include="printAllTasks.h" />
+    <ClInclude Include="printRangeTask.h" />
     <ClInclude Include="printSingleTask.h" />
+    <ClInclude Include="searchTask.h" />
     <ClInclude Include="taskStruct.h" />
     <ClInclude Include="updateTask.h" />
   </ItemGroup>
@@ -160,7 +162,9 @@
     <ClCompile Include="menuPrint.c" />
     <ClCompile Include="newTask.c" />
     <ClCompile Include="printAllTasks.c" />
+    <ClCompile Include="printRangeTask.c" />
     <ClCompile Include="printSingleTask.c" />
+    <ClCompile Include="searchTask.c" />
     <ClCompile Include="Source.c" />
     <ClCompile Include="updateTask.c" />
   </ItemGroup>

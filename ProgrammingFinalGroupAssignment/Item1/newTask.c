@@ -19,6 +19,8 @@
 #define EXITNUMBER -1
 #define LOWERLIMIT -2
 #define CAPACITY 15
+#define MONTHSINYEAR 12
+#define DAYSINAMONTH 31
 
 
 
@@ -47,10 +49,21 @@ void addTask()
 
 
 				// get day and month of task
-				printf("Enter Day Of Task: ");
-				scanf("%d", &taskArray[*taskNum].day);
+
 				printf("Enter Month Of Task: ");
 				scanf("%d", &taskArray[*taskNum].month);
+				while (taskArray[*taskNum].month > MONTHSINYEAR || taskArray[*taskNum].month < 0) {
+					printf("Invalid month, please enter a valid month: ");
+					scanf("%d", &taskArray[*taskNum].month);
+				}
+
+				printf("Enter Day Of Task: ");
+				scanf("%d", &taskArray[*taskNum].day);
+				while (taskArray[*taskNum].day > DAYSINAMONTH || taskArray[*taskNum].day < 0) {
+					printf("Invalid day, please enter a valid day: ");
+					scanf("%d", &taskArray[*taskNum].day);
+				}
+				
 
 				fgetc(stdin); // consumes newline so we can use fgets
 

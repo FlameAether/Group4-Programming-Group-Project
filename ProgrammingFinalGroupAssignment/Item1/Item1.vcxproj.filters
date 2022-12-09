@@ -48,6 +48,12 @@
     <ClInclude Include="printSingleTask.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="printRangeTask.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="searchTask.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.c">
@@ -81,6 +87,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="printSingleTask.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="printRangeTask.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="searchTask.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

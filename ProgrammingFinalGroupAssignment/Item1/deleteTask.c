@@ -20,49 +20,61 @@
 #define CAPACITY 15
 #define LOWESTTASK 0
 
-
+// This function is used to delete a pre-existing tast
 void deleteTask()
 {
+	// Ask the user for a task number to delete
 	printf("Please enter task number to be deleted (or -1 to quit): ");
 
+	// Allocate storage to taskNum
 	int* taskNum = (int*)malloc(sizeof(int));
 
-	if (scanf("%d", taskNum) == INTCHECK) // check return value to see if an int was entered
+	// Check return value to see if an int was entered
+	if (scanf("%d", taskNum) == INTCHECK) 
 	{
-		// checks if seatnum is null
+		// Checks if seatnum is null
 		if (taskNum == NULL)
 		{
 			printf("Please enter an integer\n");
 			exit(EXIT_FAILURE);
 		}
 
-		// if the user input is not equal to our exit number and is within our seat number count (seats 0-11)
+		// If the user input is not equal to our exit number and is within our seat number count (seats 0-11)
 		if (*taskNum != EXITNUMBER && *taskNum >= LOWESTTASK && *taskNum <= CAPACITY)
 		{
-			if (taskArray[*taskNum].assigned == true) { // checks if seat is occupied
+			// Checks if seat is occupied
+			if (taskArray[*taskNum].assigned == true) { 
 
+				// Resets all values to NULL
 				char* reset = "\0";
 				taskArray[*taskNum].day = reset;
 				taskArray[*taskNum].month = reset;
-				strcpy(taskArray[*taskNum].element, reset); // resets names to null 
+				strcpy(taskArray[*taskNum].element, reset); 
 
-				taskArray[*taskNum].assigned = false; // deassign the seat
+				// Deassign the seat
+				taskArray[*taskNum].assigned = false; 
 
+				// Confirm to the user that the task has been deleted
 				printf("\nTask has been successfully deleted.");
-
 			}
-			else if (taskArray[*taskNum].assigned != true) // if the user tries to delete seat that is already empty
+
+			// If the user tries to delete seat that is already empty
+			else if (taskArray[*taskNum].assigned != true) 
 			{
 				printf("\nTask is already empty!\n");
 				return;
 			}
 		}
-		if (*taskNum == EXITNUMBER) // if user input is equal to -1 (the number to quit)
+
+		// If user input is equal to -1 (the number to quit)
+		if (*taskNum == EXITNUMBER) 
 		{
 			printf("\nQuit!\n");
 			return;
 		}
-		if (*taskNum <= LOWERLIMIT || *taskNum > CAPACITY) // if user input is out of bounds 
+
+		// If user input is out of bounds 
+		if (*taskNum <= LOWERLIMIT || *taskNum > CAPACITY) 
 		{
 			printf("\nPlease enter an integer between 0 and 14!\n");
 			return;
@@ -70,7 +82,8 @@ void deleteTask()
 		free(taskNum);
 	}
 
-	else // any other input that is an invalid seat number, such as a char/string 
+	// Any other input that is an invalid seat number, such as a char/string 
+	else 
 	{
 		printf("\nPlease enter an integer between 0 and 14!\n");
 		return;

@@ -1,8 +1,11 @@
-// Assignment 4 - Question 2 New Seat File
-// Adds a customer to a seat number using user input 
-// PROG71985 - 22F - Sec2 - Programming Principles
-// Ryan Tu - Fall November 2022
-// Version 1.0
+// Final Group Assignment: To-Do-List
+// PROG71985 
+// Adds a new task to the file 
+// PROG71985 - Winter 2022
+// Version 3.0
+//
+// Group 4:Ryan Tu, Matteo Filippone, Owen Oliveira  
+//
 
 #define _CRT_SECURE_NO_WARNINGS
 #define MAXSIZE 80
@@ -23,29 +26,33 @@
 #define DAYSINAMONTH 31
 
 
-
+// Function to add a task to the file 
 void addTask()
 {
 	int* taskNum = (int*)malloc(sizeof(int*));
 	int length = 0; 
 
-	// asks for seat number requested + first/last name from user 
+	// Asks for seat number requested + first/last name from user 
 	printf("Enter Task Number (or -1 to quit): ");
 
-	if (scanf("%d", taskNum) == INTCHECK) // checks if input is an int
+	// Checks if input is an int
+	if (scanf("%d", taskNum) == INTCHECK) 
 	{
-		// checks if tasknum is null
+		// Checks if tasknum is null
 		if (taskNum == NULL)
 		{
 			printf("Please enter an integer!\n");
 			exit(EXIT_FAILURE);
 		}
 
-		if (*taskNum != EXITNUMBER && *taskNum >= 0 && *taskNum < CAPACITY) // checks if input is within bounds 
+		// Checks if input is within bounds 
+		if (*taskNum != EXITNUMBER && *taskNum >= 0 && *taskNum < CAPACITY) 
 		{
-			if (taskArray[*taskNum].assigned != true) // if seat is not occupied 
+			// If seat is not occupied
+			if (taskArray[*taskNum].assigned != true)  
 			{
-				taskArray[*taskNum].id = *taskNum; // seat number assignment
+				// seat number assignment
+				taskArray[*taskNum].id = *taskNum; 
 
 
 				// get day and month of task
@@ -65,32 +72,38 @@ void addTask()
 				}
 				
 
-				fgetc(stdin); // consumes newline so we can use fgets
+				// Consumes newline so we can use fgets
+				fgetc(stdin); 
 
+				// Removes newline from fgets
 				printf("Enter Task Description: ");
 				fgets(taskArray[*taskNum].element, MAXSIZE, stdin);
 				length = strlen(taskArray[*taskNum].element);
-				taskArray[*taskNum].element[length - 1] = 0; // removes newline from fgets
+				taskArray[*taskNum].element[length - 1] = 0; 
 
 				taskArray[*taskNum].assigned = true;
 
 
 				printf("Succesfully assigned task.\n");
-
-
 			}
-			else if (taskArray[*taskNum].assigned == true) // if user tries to get a task that is already taken
+
+			// If user tries to get a task that is already taken
+			else if (taskArray[*taskNum].assigned == true) 
 			{
 				printf("\nSorry, task number taken already!\n");
 				return;
 			}
 		}
-		if (*taskNum == EXITNUMBER) // if input = -1 (the number to abort operation)
+
+		// If input = -1 (the number to abort operation)
+		if (*taskNum == EXITNUMBER) 
 		{
 			printf("\nQuit!\n");
 			return;
 		}
-		if (*taskNum <= LOWERLIMIT || *taskNum >= CAPACITY) // if input integer is out of bounds 
+
+		// If input integer is out of bounds 
+		if (*taskNum <= LOWERLIMIT || *taskNum >= CAPACITY) 
 		{
 			printf("\nPlease enter an integer between 0 and 14!\n");
 			return;
@@ -99,11 +112,10 @@ void addTask()
 		free(taskNum);
 	}
 
-	else // if task number input is invalid, such as char/string
+	// if task number input is invalid, such as char/string
+	else 
 	{
 		printf("\nPlease enter an integer between 0 and 14!\n");
 		return;
 	}
-
-
 }

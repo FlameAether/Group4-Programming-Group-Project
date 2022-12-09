@@ -1,26 +1,29 @@
-// Group Assignment
-// Stores our task structs  
-// PROG71985 - 22F - Sec2 - Programming Principles
-// Group 4 - Fall November 2022
-// Version 1.0
+// Final Group Assignment: To-Do-List
+// PROG71985 
+// 
+// PROG71985 - Winter 2022
+// Version 3.0
+//
+// Group 4:Ryan Tu, Matteo Filippone, Owen Oliveira  
+//
 
 #pragma once
 
 #include <stdio.h>
 #include <stdbool.h>
 
-#define MAXLEN 80 // max length of task description 
-#define ARRAYSIZE 15 // size of array - program can hold max 15 tasks
+#define MAXLEN 80			// Max length of task description 
+#define ARRAYSIZE 15		// The maximum tasks the program can hold
 
-typedef struct task {
-	int id;
-	int day;
-	int month;
-	bool assigned;
-	char element[MAXLEN];
+typedef struct task {		// Create a struct for the creation of a task
+	int id;					// Take the id number of the task
+	int day;				// Take the day for the task
+	int month;				// Take the month for the task
+	bool assigned;			// Check if the task has been assigned yet (Y || N)
+	char element[MAXLEN];	// Take in text as element for what the task is
 }task;
 
-task taskArray[ARRAYSIZE];
+task taskArray[ARRAYSIZE];	// Create taskArrray and set it to store 15 tasks
 
 
 

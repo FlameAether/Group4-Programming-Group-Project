@@ -1,8 +1,12 @@
-// Group Project - New Task Header File
-// PROG71985 - 22F - Sec2 - Programming Principles
-// Ryan Tu - Fall November 2022
-// Version 1.0
+// Final Group Assignment: To-Do-List
+// PROG71985 
+// 
+// PROG71985 - Winter 2022
+// Version 3.0
+//
+// Group 4:Ryan Tu, Matteo Filippone, Owen Oliveira  
+//
 
 #pragma once
 
-void addTask();
+void addTask();	// Function to add a task to the file 

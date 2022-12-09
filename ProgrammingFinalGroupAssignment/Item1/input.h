@@ -1,8 +1,11 @@
-// Group Project - Input Header File
-// PROG71985 - 22F - Sec2 - Programming Principles
-// Ryan Tu - Fall November 2022
-// Version 1.0
-
+// Final Group Assignment: To-Do-List
+// PROG71985 
+// 
+// PROG71985 - Winter 2022
+// Version 3.0
+//
+// Group 4:Ryan Tu, Matteo Filippone, Owen Oliveira  
+//
 #pragma once
 
-void userInputFunction(char* userInput);
+void userInputFunction(char* userInput);	// This function takes the user input and checks to see if its a char

@@ -1,9 +1,12 @@
-// Group Assignment
-// Prints out all tasks header file  
-// PROG71985 - 22F - Sec2 - Programming Principles
-// Group 4 - Fall November 2022
-// Version 1.0
+// Final Group Assignment: To-Do-List
+// PROG71985 
+// 
+// PROG71985 - Winter 2022
+// Version 3.0
+//
+// Group 4:Ryan Tu, Matteo Filippone, Owen Oliveira  
+//
 
 #pragma once
 
-void printAllTasksFunction();
+void printAllTasksFunction();	// Prints out all the current tasks

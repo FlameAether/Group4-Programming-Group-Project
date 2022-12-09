@@ -1,15 +1,19 @@
-// Group Assignment
-// Prints out menu  
-// PROG71985 - 22F - Sec2 - Programming Principles
-// Group 4 - Fall November 2022
-// Version 1.0
+// Final Group Assignment: To-Do-List
+// PROG71985 
+// Prints out menu 
+// 
+// PROG71985 - Winter 2022
+// Version 3.0
+//
+// Group 4:Ryan Tu, Matteo Filippone, Owen Oliveira  
+//
 
 #include <stdio.h>
 #include "menuPrint.h"
 
+// Function to print out the menu options
 void menuPrint()
 {
-	// displays menu
 	printf("\nMenu:\na) Add a task\nb) Show List Of Tasks\n");
 	printf("c) View Available Task Numbers\nd) Delete A Task\n");
 	printf("e) Update a task\nf) Display a single Task\n");

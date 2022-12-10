@@ -1,6 +1,4 @@
 // Final Group Assignment: To-Do-List
-// PROG71985 
-// 
 // PROG71985 - Winter 2022
 // Version 3.0
 //

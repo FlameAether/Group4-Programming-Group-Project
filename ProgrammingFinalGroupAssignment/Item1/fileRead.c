@@ -1,7 +1,4 @@
 // Final Group Assignment: To-Do-List
-// PROG71985 
-// // Reads info from file into program - creates new file if non-existent  
-// 
 // PROG71985 - Winter 2022
 // Version 3.0
 //

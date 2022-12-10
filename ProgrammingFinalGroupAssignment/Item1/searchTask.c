@@ -17,8 +17,10 @@
 #define MAXLEN 80
 #define INTCHECK 1
 #define EXITNUMBER -1
-#define LOWERLIMIT -2
+#define LOWERLIMIT 0
 #define CAPACITY 15
+#define MONTHSINYEAR 12
+#define DAYSINAMONTH 31
 
 // This function searches for a specific task
 void searchTask() 
@@ -40,7 +42,7 @@ void searchTask()
 		}
 
 
-		printf("\nEnter a task month: ");
+		printf("\nEnter a task month(-1 to exit): ");
 		if (scanf("%d", taskMonth) == INTCHECK) {
 
 
@@ -53,7 +55,7 @@ void searchTask()
 
 
 			// Checks if input is within bounds 
-			if ((*taskday != EXITNUMBER && *taskday >= 0 && *taskday < CAPACITY) || (*taskMonth != EXITNUMBER && *taskMonth >= 0 && *taskMonth < CAPACITY))
+			if ((*taskday != EXITNUMBER && *taskday >= 0 && *taskday < DAYSINAMONTH) || (*taskMonth != EXITNUMBER && *taskMonth >= 0 && *taskMonth < MONTHSINYEAR))
 			{
 
 				for (int i = 0; i < CAPACITY; i++) {
@@ -62,6 +64,7 @@ void searchTask()
 					{
 						printf("\nTask Number: %d\nMonth: %d Day: %d\nDescription: %s\n", taskArray[i].id, taskArray[i].month, taskArray[i].day, taskArray[i].element);
 						counter++;
+						
 					}
 				}
 
@@ -81,7 +84,7 @@ void searchTask()
 			}
 
 			// If input integer is out of bounds 
-			if ((*taskday <= LOWERLIMIT || *taskday >= CAPACITY) || (*taskMonth <= LOWERLIMIT || *taskMonth >= CAPACITY))
+			if ((*taskday <= LOWERLIMIT || *taskday >= DAYSINAMONTH) || (*taskMonth <= LOWERLIMIT || *taskMonth >= MONTHSINYEAR))
 			{
 				printf("\nPlease enter an integer between 0 and 14!\n");
 				return;

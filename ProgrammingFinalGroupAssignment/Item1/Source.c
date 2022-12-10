@@ -59,7 +59,7 @@ int main(void)
 	// Read file at startup 
 	fileReader();
 
-	printf("^_^ Welcome To Task Manager! ^_^\n\nPlease select from the following menu using the coresponding letter:\n\n");
+	printf("^_^ Welcome To Task Manager! ^_^\n\nPlease select from the following menu using the corresponding letter:\n\n");
 	menuPrint();
 
 	// Prompt the user for an input
@@ -71,7 +71,7 @@ int main(void)
 	{ 
 	
 		// Use a switch case to take the users input and run different options
-		// with their corrisponding functions
+		// with their corresponding functions
 		switch (userInput)
 		{
 		case 'a': 

@@ -23,7 +23,7 @@
 // Function to print out a single task selected by the user
 void printSingleTask() 
 {
-
+	int counter = 0;
 	int* taskNum = (int*)malloc(sizeof(int*));
 
 	// Asks for task number requested + first/last name from user 
@@ -54,12 +54,14 @@ void printSingleTask()
 
 					// Print the contents of the struct
 					printf("\nTask Number: %d\nMonth: %d Day: %d\nDescription: %s\n", taskArray[i].id, taskArray[i].month, taskArray[i].day, taskArray[i].element);
-					break;
+					counter++;
+					return;
 				}
 
 			}
-			printf("There is no task under that ask id\n");
-
+			if (counter == 0) {
+				printf("There is no task under that ask id\n");
+			}
 		}
 
 		// If input = -1 (the number to abort operation)

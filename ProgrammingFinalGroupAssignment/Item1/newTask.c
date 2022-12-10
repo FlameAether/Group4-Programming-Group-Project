@@ -1,6 +1,4 @@
 // Final Group Assignment: To-Do-List
-// PROG71985 
-// Adds a new task to the file 
 // PROG71985 - Winter 2022
 // Version 3.0
 //

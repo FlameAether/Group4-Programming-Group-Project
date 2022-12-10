@@ -1,5 +1,5 @@
+// Final Group Assignment: To-Do-List
 // PROG71985 - Winter 2022
-// Prints out available task numbers  
 // Version 3.0
 //
 // Group 4:Ryan Tu, Matteo Filippone, Owen Oliveira  

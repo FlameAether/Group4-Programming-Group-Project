@@ -1,7 +1,4 @@
 // Final Group Assignment: To-Do-List
-// PROG71985 
-// Writes info to file  
-// 
 // PROG71985 - Winter 2022
 // Version 3.0
 //

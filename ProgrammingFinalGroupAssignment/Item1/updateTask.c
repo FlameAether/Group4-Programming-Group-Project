@@ -1,8 +1,9 @@
-// Group Assignment
-// Stores our task structs  
-// PROG71985 - 22F - Sec2 - Programming Principles
-// Group 4 - Fall November 2022
-// Version 1.0
+// Final Group Assignment: To-Do-List
+// PROG71985 - Winter 2022
+// Version 3.0
+//
+// Group 4:Ryan Tu, Matteo Filippone, Owen Oliveira  
+//
 
 #define _CRT_SECURE_NO_WARNINGS
 

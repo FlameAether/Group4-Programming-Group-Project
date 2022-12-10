@@ -16,8 +16,8 @@ void menuPrint()
 {
 	printf("\nMenu:\na) Add a task\nb) Show List Of Tasks\n");
 	printf("c) View Available Task Numbers\nd) Delete A Task\n");
-	printf("e) Update a task\nf) Display a single Task\n");
-	printf("g) Print a range of tasks\n");
+	printf("e) Update a Task\nf) Display a Single Task\n");
+	printf("g) Print a Range of Tasks\nh)Search of a Task");
 	printf("z) Quit\n");
 	printf("\n---------------------------");
 	printf("\nAction: ");

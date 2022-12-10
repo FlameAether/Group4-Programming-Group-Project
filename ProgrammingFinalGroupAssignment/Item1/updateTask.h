@@ -9,4 +9,4 @@
 
 #pragma once
 
-void updateTask(char* userInput);	// Function to update an existing task taking the users input
+void updateTask();	// Function to update an existing task taking the users input

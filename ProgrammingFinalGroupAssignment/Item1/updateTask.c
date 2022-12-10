@@ -4,7 +4,6 @@
 // Group 4 - Fall November 2022
 // Version 1.0
 
-#define MAXINPUT	100 // not sure if we have a define for max char
 #define _CRT_SECURE_NO_WARNINGS
 
 #include <stdio.h>
@@ -13,42 +12,34 @@
 #include <stdbool.h>
 #include "updateTask.h"
 #include "printAllTasks.h"
-#include "userInputFunction.h"
+#include "taskStruct.h"
 
+#define MAXLEN 80
 
-void updateTask(char* userInput)
+void updateTask()
 {
-	char newTask[MAXINPUT];
-	char confirmation[1];
+	int task;
+	char newTask[MAXLEN];
+	
 	printAllTasksFunction();
 
-	printf("Select from which task you would like to update: ");
-	userInputFunction(char* userInput); //not sure how to call this function or if i should just make a new char for it
+	printf("Choose a task you would like to update: ");
+	scanf("%d", task);
 
-	// Find the # of the task based on userInput and edit it to what the user wants
-	printf("Type below the contents of your new task: \n");
-	scanf("%s", newTask);
-	
-	//print the user the changes they are making
-	printf("Here are the changes you want to make:");
-	printf("%s\n %s\n", userInput, newTask);
-	
-	//ask for confirmation
-	printf("Is this correct? Enter [n/N] to abort or any other key to continue.");
-	scanf("%s", confirmation);
+	for (int i = 0; i < ARRAYSIZE; i++) {
+		if (task == taskArray[i].id) {
 
-	// scan to see if the user input was y or n
-	if ((confirmation = getchar()) != '\n')
-		while (getchar() != '\n') continue;
-	if (confirmation == 'n' || confirmation == 'N')
-	{
-		puts("Canceling changes.");
-		return;
+
+			// Find the # of the task based on userInput and edit it to what the user wants
+			printf("Type a new description for the task:\n");
+			fgetc(stdin); // consumes newline so we can use fgets
+			fgets(newTask, MAXLEN, stdin);
+			newTask[strlen(task) - 1] = '\0';
+
+			taskArray[task].element = newTask;
+
+		}
+
 	}
-	//print changes saved and end of function
-	printf("Changes saved!\n");
-
-	// I think I need a file io type line of code to save the change but not sure
-
 
 }

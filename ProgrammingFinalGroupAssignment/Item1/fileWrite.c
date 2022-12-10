@@ -2,7 +2,7 @@
 // PROG71985 - Winter 2022
 // Version 3.0
 //
-// Group 4:Ryan Tu, Matteo Filippone, Owen Oliveira  
+// Ryan Tu  
 //
 
 #define _CRT_SECURE_NO_WARNINGS

@@ -2,7 +2,7 @@
 // PROG71985 - Winter 2022
 // Version 3.0
 //
-// Group 4:Ryan Tu, Matteo Filippone, Owen Oliveira  
+// Matteo Filippone
 //
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -36,7 +36,7 @@ void printSingleTask()
 		// Checks if tasknum is null
 		if (taskNum == NULL)
 		{
-			printf("Please enter an integer!\n");
+			printf("Error using malloc\n");
 			exit(EXIT_FAILURE);
 		}
 		
@@ -50,7 +50,7 @@ void printSingleTask()
 			for (int i = 0; i < ARRAYSIZE; i++) {
 
 				// If the task has been stored and is not empty,
-				if ((taskArray[i].id == taskNum) && (taskArray[i].assigned == true)) {
+				if ((taskArray[i].id == *taskNum) && (taskArray[i].assigned == true)) {
 
 					// Print the contents of the struct
 					printf("\nTask Number: %d\nMonth: %d Day: %d\nDescription: %s\n", taskArray[i].id, taskArray[i].day, taskArray[i].month, taskArray[i].element);

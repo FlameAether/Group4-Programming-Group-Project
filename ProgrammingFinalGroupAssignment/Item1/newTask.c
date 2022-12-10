@@ -2,7 +2,7 @@
 // PROG71985 - Winter 2022
 // Version 3.0
 //
-// Group 4:Ryan Tu, Matteo Filippone, Owen Oliveira  
+// Ryan Tu
 //
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -28,7 +28,7 @@
 void addTask()
 {
 	int* taskNum = (int*)malloc(sizeof(int*));
-	int length = 0; 
+	//int length = 0; 
 
 	// Asks for task number requested + first/last name from user 
 	printf("Enter Task Number (or -1 to quit): ");
@@ -39,7 +39,7 @@ void addTask()
 		// Checks if tasknum is null
 		if (taskNum == NULL)
 		{
-			printf("Please enter an integer!\n");
+			printf("Error using malloc\n");
 			exit(EXIT_FAILURE);
 		}
 
@@ -76,8 +76,7 @@ void addTask()
 				// Removes newline from fgets
 				printf("Enter Task Description: ");
 				fgets(taskArray[*taskNum].element, MAXSIZE, stdin);
-				length = strlen(taskArray[*taskNum].element);
-				taskArray[*taskNum].element[length - 1] = 0; 
+				
 
 				taskArray[*taskNum].assigned = true;
 

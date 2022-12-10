@@ -140,7 +140,6 @@ int main(void)
 		}
 		
 		// Calls user input function
-
 		userInputFunction(&userInput); 
 	}
 

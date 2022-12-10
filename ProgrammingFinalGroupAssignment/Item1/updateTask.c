@@ -2,7 +2,7 @@
 // PROG71985 - Winter 2022
 // Version 3.0
 //
-// Group 4:Ryan Tu, Matteo Filippone, Owen Oliveira  
+// Owen Oliveira/Matteo Filippone
 //
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -37,7 +37,7 @@ void updateTask()
 		// Checks if tasknum is null
 		if (task == NULL)
 		{
-			printf("Please enter an integer!\n");
+			printf("Error using malloc!\n");
 			exit(EXIT_FAILURE);
 		}
 
@@ -46,14 +46,14 @@ void updateTask()
 		{
 
 			for (int i = 0; i < ARRAYSIZE; i++) {
-				if (task == taskArray[i].id) {
+				if (*task == taskArray[i].id) {
 
 
 					// Find the # of the task based on userInput and edit it to what the user wants
 					printf("Type a new description for the task:\n");
 					fgetc(stdin); // consumes newline so we can use fgets
 					fgets(newTask, MAXLEN, stdin);
-					newTask[strlen(newTask) - 1] = '\0';
+					
 
 					strcpy(taskArray[*task].element, newTask);
 

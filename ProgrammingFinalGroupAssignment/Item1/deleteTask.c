@@ -2,7 +2,7 @@
 // PROG71985 - Winter 2022
 // Version 3.0
 //
-// Group 4:Ryan Tu, Matteo Filippone, Owen Oliveira  
+// Ryan Tu
 //
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -48,8 +48,8 @@ void deleteTask()
 
 				// Resets all values to NULL
 				char* reset = "\0";
-				taskArray[*taskNum].day = reset;
-				taskArray[*taskNum].month = reset;
+				taskArray[*taskNum].day = 0;
+				taskArray[*taskNum].month = 0;
 				strcpy(taskArray[*taskNum].element, reset); 
 
 				// Deassign the seat

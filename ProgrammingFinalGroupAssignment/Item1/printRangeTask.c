@@ -25,10 +25,10 @@ void printRangeTask()
 	int* input1 = (int*)malloc(sizeof(int*));
 	int* input2 = (int*)malloc(sizeof(int*));
 	int counter = 0;
+
+
 	printf("Enter a range of tasks you would like to print out\n");
 	printf("Enter the task number (-1 to exit):");
-
-
 
 	
 	// Checks if input is an int
@@ -58,6 +58,7 @@ void printRangeTask()
 			{
 
 				for (int i = 0; i < CAPACITY; i++) {
+					//print the tasks between the range given by the user
 					if (((taskArray[i].assigned == true) && (*input1 <= taskArray[i].id) && taskArray[i].id <= *input2))
 					{
 						printf("\nTask Number: %d\nMonth: %d Day: %d\nDescription: %s\n", taskArray[i].id, taskArray[i].month, taskArray[i].day, taskArray[i].element);

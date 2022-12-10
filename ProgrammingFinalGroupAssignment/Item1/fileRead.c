@@ -33,7 +33,7 @@ void fileReader()
 	{
 		taskArray[i].id = i;
 	}
-
+	//read the 
 	while (fread(&tmp, size, SIZE, fpointer1) == SIZE)
 	{
 		taskArray[tmp.id] = tmp;

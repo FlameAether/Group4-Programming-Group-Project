@@ -53,8 +53,7 @@ void addTask()
 				taskArray[*taskNum].id = *taskNum; 
 
 
-				// get day and month of task
-
+				// get day and month of task and ensure they are in the bounds of the the months
 				printf("Enter Month Of Task: ");
 				scanf("%d", &taskArray[*taskNum].month);
 				while (taskArray[*taskNum].month > MONTHSINYEAR || taskArray[*taskNum].month <= 0) {

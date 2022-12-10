@@ -1,5 +1,5 @@
 # Group4-Programming-Group-Project
-Group 4 Task Manager - Programming Principles - RT - MF - OO
+Group 4 Task Manager - Programming Principles - Ryan Tu - Matteo Filippone - Owen Oliveira
 
   For this assingment we all collectivly agreed to create the to-do-list as our topic for the final assingment.
   In the mandatory features portion of the rubric, we decided to take those 10 different functions and divide them up

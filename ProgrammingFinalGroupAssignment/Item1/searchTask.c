@@ -84,7 +84,7 @@ void searchTask()
 			}
 
 			// If input integer is out of bounds 
-			if ((*taskday <= LOWERLIMIT || *taskday >= DAYSINAMONTH) || (*taskMonth <= LOWERLIMIT || *taskMonth >= MONTHSINYEAR))
+			if ((*taskday < LOWERLIMIT || *taskday >= DAYSINAMONTH) || (*taskMonth < LOWERLIMIT || *taskMonth >= MONTHSINYEAR))
 			{
 				printf("\nPlease enter an integer between 0 and 14!\n");
 				return;

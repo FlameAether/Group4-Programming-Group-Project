@@ -8,12 +8,23 @@ Group 4 Task Manager - Programming Principles - RT - MF - OO
   
   Owen:
     Features 1-3
+    - Add new task
+    - Delete Existing Task
+    - Update existing task
   
   Ryan:
-    Features 8-10
+    Features 7-9
+      - Search for task
+      - UI of the program
+      - Read and write functions
+        to the disk
+     
   
   Matteo:
-   Features 4-7
+   Features 4-6
+      - Display single task
+      - Display range of task
+      - Display all tasks
    
   This was the easiest way to distribute the workload and get a basis for the strucure of the functions.
   Aditionally, we all had different roles in terms of the final completion of the assingment:

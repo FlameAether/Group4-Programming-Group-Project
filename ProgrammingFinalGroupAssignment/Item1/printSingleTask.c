@@ -53,7 +53,7 @@ void printSingleTask()
 				if ((taskArray[i].id == *taskNum) && (taskArray[i].assigned == true)) {
 
 					// Print the contents of the struct
-					printf("\nTask Number: %d\nMonth: %d Day: %d\nDescription: %s\n", taskArray[i].id, taskArray[i].day, taskArray[i].month, taskArray[i].element);
+					printf("\nTask Number: %d\nMonth: %d Day: %d\nDescription: %s\n", taskArray[i].id, taskArray[i].month, taskArray[i].day, taskArray[i].element);
 					break;
 				}
 

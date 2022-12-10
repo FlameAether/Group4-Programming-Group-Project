@@ -23,7 +23,7 @@ void printAllTasksFunction()
 		if (taskArray[i].assigned == true)  
 		{
 			// Print out the information thats in the array
-			printf("\nTask Number: %d\nMonth: %d Day: %d\nDescription: %s\n", taskArray[i].id, taskArray[i].day, taskArray[i].month, taskArray[i].element);
+			printf("\nTask Number: %d\nMonth: %d Day: %d\nDescription: %s\n", taskArray[i].id, taskArray[i].month, taskArray[i].day, taskArray[i].element);
 			counter++;
 		}
 	}

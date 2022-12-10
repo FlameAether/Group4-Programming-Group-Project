@@ -7,6 +7,8 @@
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include <stdbool.h>
 #include <ctype.h>
 #include "printRangeTask.h"
@@ -25,8 +27,6 @@ void printRangeTask()
 	printf("From task %d, to task..", input1);
 	int input2;
 	scanf("%d", &input2);
-
-
 	
 		for (int i = 0; i < CAPACITY; i++) {
 			if ((taskArray[i].assigned == true) && ((input1 <= taskArray[i].id) && taskArray[i].id <=input2)) 
@@ -37,7 +37,7 @@ void printRangeTask()
 		}
 	
 
-	if (counter == 0) // prints out message if no seats are occupied 
+	if (counter == 0) // prints out message if no tasks are occupied 
 	{
 		printf("No tasks assigned yet!\n");
 	}

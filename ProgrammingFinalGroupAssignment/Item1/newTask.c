@@ -30,7 +30,7 @@ void addTask()
 	int* taskNum = (int*)malloc(sizeof(int*));
 	int length = 0; 
 
-	// Asks for seat number requested + first/last name from user 
+	// Asks for task number requested + first/last name from user 
 	printf("Enter Task Number (or -1 to quit): ");
 
 	// Checks if input is an int
@@ -46,10 +46,10 @@ void addTask()
 		// Checks if input is within bounds 
 		if (*taskNum != EXITNUMBER && *taskNum >= 0 && *taskNum < CAPACITY) 
 		{
-			// If seat is not occupied
+			// If task is not occupied
 			if (taskArray[*taskNum].assigned != true)  
 			{
-				// seat number assignment
+				// task number assignment
 				taskArray[*taskNum].id = *taskNum; 
 
 
@@ -57,14 +57,14 @@ void addTask()
 
 				printf("Enter Month Of Task: ");
 				scanf("%d", &taskArray[*taskNum].month);
-				while (taskArray[*taskNum].month > MONTHSINYEAR || taskArray[*taskNum].month < 0) {
+				while (taskArray[*taskNum].month > MONTHSINYEAR || taskArray[*taskNum].month <= 0) {
 					printf("Invalid month, please enter a valid month: ");
 					scanf("%d", &taskArray[*taskNum].month);
 				}
 
 				printf("Enter Day Of Task: ");
 				scanf("%d", &taskArray[*taskNum].day);
-				while (taskArray[*taskNum].day > DAYSINAMONTH || taskArray[*taskNum].day < 0) {
+				while (taskArray[*taskNum].day > DAYSINAMONTH || taskArray[*taskNum].day <= 0) {
 					printf("Invalid day, please enter a valid day: ");
 					scanf("%d", &taskArray[*taskNum].day);
 				}

@@ -25,7 +25,7 @@ void updateTask()
 	printAllTasksFunction();
 
 	printf("Choose a task you would like to update: ");
-	scanf("%d", task);
+	scanf("%d", &task);
 
 	for (int i = 0; i < ARRAYSIZE; i++) {
 		if (task == taskArray[i].id) {
@@ -35,9 +35,11 @@ void updateTask()
 			printf("Type a new description for the task:\n");
 			fgetc(stdin); // consumes newline so we can use fgets
 			fgets(newTask, MAXLEN, stdin);
-			newTask[strlen(task) - 1] = '\0';
+			newTask[strlen(newTask) - 1] = '\0';
 
-			taskArray[task].element = newTask;
+			strcpy(taskArray[task].element, newTask);
+			
+			return;
 
 		}
 

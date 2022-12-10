@@ -109,7 +109,7 @@ int main(void)
 		case 'e':
 		case 'E':
 		{
-			//updateTask();
+			updateTask();
 			menuPrint();
 			break;
 		}

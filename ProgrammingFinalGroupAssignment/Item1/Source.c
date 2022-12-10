@@ -69,6 +69,7 @@ int main(void)
 	// will loop until user input = 'z'
 	while (userInput != 'z') 
 	{ 
+	
 		// Use a switch case to take the users input and run different options
 		// with their corrisponding functions
 		switch (userInput)
@@ -119,6 +120,7 @@ int main(void)
 		{
 			printSingleTask();
 			menuPrint();
+			break;
 		}
 
 		case 'g':
@@ -126,15 +128,19 @@ int main(void)
 		{
 			printRangeTask();
 			menuPrint();
+			break;
 		}
 		case 'h': 
 		case 'H':
 		{
 			searchTask();
 			menuPrint();
+			break;
 		}
 		}
+		
 		// Calls user input function
+
 		userInputFunction(&userInput); 
 	}
 

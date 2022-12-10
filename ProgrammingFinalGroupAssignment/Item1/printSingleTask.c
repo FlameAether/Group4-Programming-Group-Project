@@ -29,6 +29,7 @@ void printSingleTask()
 	// Asks for task number requested + first/last name from user 
 	printf("Enter Task Number (or -1 to quit): ");
 
+
 	// Checks if input is an int
 	if (scanf("%d", taskNum) == INTCHECK)
 	{
@@ -38,6 +39,7 @@ void printSingleTask()
 			printf("Please enter an integer!\n");
 			exit(EXIT_FAILURE);
 		}
+		
 
 		// Checks if input is within bounds 
 		if (*taskNum != EXITNUMBER && *taskNum >= 0 && *taskNum < CAPACITY)
@@ -75,12 +77,14 @@ void printSingleTask()
 		}
 
 		free(taskNum);
+		fgetc(stdin);
 	}
 
 	// if task number input is invalid, such as char/string
 	else
 	{
 		printf("\nPlease enter an integer between 0 and 14!\n");
+		fgetc(stdin);
 		return;
 	}
 }
